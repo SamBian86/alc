@@ -37,7 +37,7 @@ app.use('/wechat', wechat(config, function (req, res, next) {
   var message = req.weixin;
   if (message) {
     // 回复屌丝(普通回复)
-    res.reply('haha');
+    res.reply(JSON.stringify(message));
   }
 }));
 
