@@ -35,9 +35,10 @@ app.use('/users', users);
 app.use('/wechat', wechat(config, function (req, res, next) {
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
-  if (message) {
-    // 回复屌丝(普通回复)
-    res.reply(JSON.stringify(message));
+  if (message.Content !== '') {
+    res.reply('乱打咩字呀,仆街仔!~');
+  } else {
+    res.reply('感谢您的关注')
   }
 }));
 
