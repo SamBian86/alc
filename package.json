@@ -9,10 +9,27 @@
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "eslint": "^5.2.0",
+    "eslint-config-eslint": "^5.0.1",
+    "eslint-plugin-node": "^7.0.1",
     "express": "~4.15.5",
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5",
     "wechat": "^2.1.0"
-  }
+  },
+  "main": ".eslintrc.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllanBian/alc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllanBian/alc/issues"
+  },
+  "homepage": "https://github.com/AllanBian/alc#readme",
+  "description": ""
 }
