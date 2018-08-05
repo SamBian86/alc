@@ -1,0 +1,11 @@
+/*
+* @Author: bxdsam
+* @Date:   2018-08-05 18:56:34
+* @Last Modified by:   bxdsam
+* @Last Modified time: 2018-08-05 19:01:04
+*/
+html,body { height: 100%; width: 100%; background: #f1ccb8; color: #222; font-family: "微软雅黑"; }
+input { padding: 0; border:none; }
+input,textarea { font-family: "微软雅黑"; }
+a,a:hover { color: #222; text-decoration: none; }
+.clearfix:after { content: " "; display: block; height: 0; overflow: hidden; clear: both; }

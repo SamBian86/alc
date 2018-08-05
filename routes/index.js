@@ -10,5 +10,10 @@ router.get('/', (req, res, next) => {
   })
 })
 
+// f1ccb8
+router.get('/birthday', (req, res, next) => {
+  res.render('birthday')
+})
+
 module.exports = router
 

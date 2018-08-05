@@ -1,0 +1,24 @@
+/*
+* @Author: bxdsam
+* @Date:   2018-08-05 20:23:22
+* @Last Modified by:   bxdsam
+* @Last Modified time: 2018-08-05 21:42:08
+*/
+
+@keyframes bgRotating {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes bgRotating {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
