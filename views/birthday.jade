@@ -22,5 +22,6 @@ block content
     div.stage-1
       div.yaoqinghan
         img(src='/images/yaoqinghan.png' onload='imgLoad(this)')
-  audio#audio
-  script(src='/javascripts/birthday.js')
+  audio#audio(autoplay='autoplay' loop='true' hidden='true' controls='controls')
+    source(src='/video/qingcunwuqu.mp3' type='audio/mpeg')
+  script(src='/javascripts/birthday.js?v=123')

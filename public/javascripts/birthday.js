@@ -2,11 +2,10 @@
  * @Author: bxdsam
  * @Date:   2018-08-05 23:35:22
  * @Last Modified by:   xiaodong.bian
- * @Last Modified time: 2018-08-06 10:52:27
+ * @Last Modified time: 2018-08-06 11:09:32
  */
 (function(win) {
   var num = 0;
-  var weixin = false;
   var cake = document.querySelector('.cake');
   var point = document.querySelector('.point');
   var qiqiuG = document.querySelector('.qiqiu-g');
@@ -46,30 +45,18 @@
     }, 1000)
   }
 
-  function audioPlay(){
-    audio.src = '/video/qingcunwuqu.mp3';
-    audio.loop = true;
-    audio.autoplay = true;
-  }
-
   function imgLoad(e) {
     num++;
     console.log(num)
     if (num === 9) {
       animateFun();
     }
-    if(weixin){
-      audioPlay();
-      audio.currentTime = 0
-      audio.play()
-    }else{
-      audioPlay();
-    }
   };
 
   win.imgLoad = imgLoad
 
   document.addEventListener("WeixinJSBridgeReady", function() {
-    weixin = true
+    audio.currentTime = 0
+    audio.play()
   }, false);
 })(window);
