@@ -12,7 +12,9 @@ router.get('/', (req, res, next) => {
 
 // f1ccb8
 router.get('/birthday', (req, res, next) => {
-  res.render('birthday')
+  res.render('birthday', {
+    title: '卞梦玥小朋友百日宴邀请函'
+  })
 })
 
 module.exports = router

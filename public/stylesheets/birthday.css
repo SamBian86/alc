@@ -1,8 +1,8 @@
 /*
 * @Author: bxdsam
 * @Date:   2018-08-05 19:28:11
-* @Last Modified by:   bxdsam
-* @Last Modified time: 2018-08-06 00:23:11
+* @Last Modified by:   xiaodong.bian
+* @Last Modified time: 2018-08-06 10:11:46
 */
 
 /* 背景 */
@@ -15,7 +15,7 @@
   left: 50%;
   width: 24.45333333rem;
   height: 25.08rem;
-  background: url('/images/bg.png') no-repeat center center;
+  /*background: url('/images/bg.png') no-repeat center center;*/
   background-size: 100% 100%;
   transform: rotate(0deg) translate(-50%, -50%);
   -webkit-transform: rotate(0deg) translate(-50%, -50%);
@@ -24,6 +24,7 @@
   animation: bgRotating 5s linear infinite normal;
   -webkit-animation: bgRotating 5s linear infinite normal;
 }
+.bg img { width: 100%; }
 
 .stage-bg {
   width: 100%;
@@ -33,7 +34,7 @@
 }
 
 .cake {
-  background: url('/images/cake.png') no-repeat center center;
+  /*background: url('/images/cake.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 11.72rem/* 879px */;
   height: 6.65333333rem/* 499px */;
@@ -46,12 +47,13 @@
   transition: all 1s;
   -webkit-transition: all 1s;
 }
+.cake img { width: 100%; }
 .cake.show {
   bottom: 6rem/* 450px */;
 }
 
 .point {
-  background: url('/images/point.png') no-repeat center center;
+  /*background: url('/images/point.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 10.97333333rem/* 823px */;
   height: 15.78666667rem/* 1184px */;
@@ -66,13 +68,14 @@
   transition: all 1s;
   -webkit-transition:  all 1s;
 }
+.point img { width: 100%; }
 .point.show {
   opacity: 1;
   -webkit-opacity: 1;
 }
 
 .qiqiu-g {
-  background: url('/images/qiqiu_green.png') no-repeat center center;
+  /*background: url('/images/qiqiu_green.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 1.38666667rem/* 104px */;
   height: 2.36rem/* 177px */;
@@ -85,12 +88,13 @@
   transition: all 1s;
   -webkit-transition: all 1s;
 }
+.qiqiu-g img { width: 100%; }
 .qiqiu-g.show {
   top: .6rem/* 45px */;
 }
 
 .qiqiu-y {
-  background: url('/images/qiqiu_yellow.png') no-repeat center center;
+  /*background: url('/images/qiqiu_yellow.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 2rem/* 150px */;
   height: 2.8rem/* 210px */;
@@ -103,12 +107,13 @@
   transition: all 1s;
   -webkit-transition: all 1s;
 }
+.qiqiu-y img { width: 100%; }
 .qiqiu-y.show {
   top: .93333333rem/* 70px */;
 }
 
 .hat-red {
-  background: url('/images/redHat.png') no-repeat center center;
+  /*background: url('/images/redHat.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 4.42666667rem/* 332px */;
   height: 3.34666667rem/* 251px */;
@@ -121,6 +126,7 @@
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
+.hat-red img { width: 100%; }
 .hat-red.show {
   top: 2.2rem/* 165px */;
   transform: scale(1) rotateZ(-40deg);
@@ -129,7 +135,7 @@
 
 
 .hat-white {
-  background: url('/images/whiteHat.png') no-repeat center center;
+  /*background: url('/images/whiteHat.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 6.28rem/* 471px */;
   height: 4.24rem/* 318px */;
@@ -142,6 +148,7 @@
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
+.hat-white img { width: 100%; }
 .hat-white.show {
   top: 2.2rem/* 240px */;
   left: -2rem;
@@ -150,7 +157,7 @@
 }
 
 .hat-yellow {
-  background: url('/images/yellowHat.png') no-repeat center center;
+  /*background: url('/images/yellowHat.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 3.38666667rem/* 254px */;
   height: 3.44rem/* 258px */;
@@ -163,6 +170,7 @@
   transition: all 1s;
   -webkit-transition: all 1s;
 }
+.hat-yellow img { width: 100%; }
 .hat-yellow.show {
   left: 0rem/* 30px */;
   top: 8.8rem/* 240px */;
@@ -181,7 +189,7 @@
 }
 
 .yaoqinghan {
-  background: url('/images/yaoqinghan.png') no-repeat center center;
+  /*background: url('/images/yaoqinghan.png') no-repeat center center;*/
   background-size: 100% 100%;
   width: 10rem/* 750px */;
   height: 7.54666667rem/* 566px */;
@@ -193,6 +201,7 @@
   transform: translateX(-50%) scale(0);
   -webkit-transform: translateX(-50%) scale(0);
 }
+.yaoqinghan img { width: 100%; }
 .yaoqinghan.show {
   transform: translateX(-50%) scale(1);
   -webkit-transform: translateX(-50%) scale(1);
