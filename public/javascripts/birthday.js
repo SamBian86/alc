@@ -2,7 +2,7 @@
  * @Author: bxdsam
  * @Date:   2018-08-05 23:35:22
  * @Last Modified by:   xiaodong.bian
- * @Last Modified time: 2018-08-06 11:09:32
+ * @Last Modified time: 2018-08-06 16:27:16
  */
 (function(win) {
   var num = 0;
@@ -14,7 +14,9 @@
   var hatWhite = document.querySelector('.hat-white');
   var hatYellow = document.querySelector('.hat-yellow');
   var yaoqinghan = document.querySelector('.yaoqinghan');
-  var audio = document.getElementById('audio');
+  // var audio = document.getElementById('audio');
+  // audio#audio(autoplay='autoplay' loop='true' hidden='true' controls='controls')
+  //   source(src='/video/qingcunwuqu.mp3?v=12' type='audio/mpeg')
 
   function animateFun() {
 
@@ -55,8 +57,8 @@
 
   win.imgLoad = imgLoad
 
-  document.addEventListener("WeixinJSBridgeReady", function() {
-    audio.currentTime = 0
-    audio.play()
-  }, false);
+  // document.addEventListener("WeixinJSBridgeReady", function() {
+  //   audio.currentTime = 0
+  //   audio.play()
+  // }, false);
 })(window);
