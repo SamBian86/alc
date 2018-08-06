@@ -2,7 +2,7 @@
  * @Author: bxdsam
  * @Date:   2018-08-05 23:35:22
  * @Last Modified by:   xiaodong.bian
- * @Last Modified time: 2018-08-06 16:27:16
+ * @Last Modified time: 2018-08-06 17:49:44
  */
 (function(win) {
   var num = 0;
@@ -14,9 +14,29 @@
   var hatWhite = document.querySelector('.hat-white');
   var hatYellow = document.querySelector('.hat-yellow');
   var yaoqinghan = document.querySelector('.yaoqinghan');
+  var timer = null;
   // var audio = document.getElementById('audio');
   // audio#audio(autoplay='autoplay' loop='true' hidden='true' controls='controls')
   //   source(src='/video/qingcunwuqu.mp3?v=12' type='audio/mpeg')
+
+  win.onload = function(){
+
+    timer = window.setTimeout(function(){
+      animateStart();
+    },1000)
+
+    function animateStart(){
+      if (num === 9) {
+        animateFun();
+        window.clearTimeout(timer)
+      }else{
+        timer = window.setTimeout(function(){
+          animateStart();
+        },1000)
+      }
+    }
+
+  }
 
   function animateFun() {
 
@@ -50,9 +70,6 @@
   function imgLoad(e) {
     num++;
     console.log(num)
-    if (num === 9) {
-      animateFun();
-    }
   };
 
   win.imgLoad = imgLoad
