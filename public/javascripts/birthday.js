@@ -2,7 +2,7 @@
  * @Author: bxdsam
  * @Date:   2018-08-05 23:35:22
  * @Last Modified by:   bxdsam
- * @Last Modified time: 2018-08-12 13:55:55
+ * @Last Modified time: 2018-08-12 14:09:06
  */
 (function(win) {
   var num = 0;
@@ -77,9 +77,7 @@
     console.log(num)
 
     if(num === 9){
-      timer = window.setTimeout(function(){
-        animateStart();
-      },1000)
+      animateStart();
     }
   };
 
